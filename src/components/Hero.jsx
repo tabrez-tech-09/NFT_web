@@ -6,7 +6,6 @@ import herosec from "../assets/herosec.png";
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-black via-purple-900 to-black text-white flex items-center px-10 overflow-hidden">
-
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
         {/* ================= LEFT CONTENT ================= */}
@@ -40,13 +39,22 @@ export default function Hero() {
 
           {/* Back Blue Card */}
           <div className="absolute -left-20 top-8 w-72 h-96 rounded-2xl overflow-hidden rotate-[-14deg] border-4 border-white shadow-[0_30px_80px_rgba(0,0,0,0.6)]">
-            <img src={herosec} className="w-full h-full object-cover" />
+            <img
+              src={herosec}
+              alt="Secondary NFT artwork"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Bottom Bid Card */}
           <div className="absolute -bottom-12 left-12 w-72 p-4 rounded-xl bg-gradient-to-r from-purple-700 to-pink-600 rotate-[-6deg] shadow-xl backdrop-blur-xl">
             <div className="flex items-center gap-2 mb-2">
-              <img src={Ellipse} className="w-7 h-7 rounded-full border border-white" />
+              <img
+                src={Ellipse}
+                alt=""
+                aria-hidden="true"
+                className="w-7 h-7 rounded-full border border-white"
+              />
               <p className="text-sm">Current Bid</p>
             </div>
             <p className="font-bold flex items-center gap-1 text-lg">⟠ 2.8 ETH</p>
@@ -54,14 +62,20 @@ export default function Hero() {
 
           {/* Main NFT Card */}
           <div className="relative z-10 w-80 bg-white rounded-2xl overflow-hidden border-4 border-white shadow-[0_40px_120px_rgba(0,0,0,0.7)]">
-
-            <img src={heroArt} className="w-full h-64 object-cover" />
+            <img
+              src={heroArt}
+              alt="Featured NFT artwork"
+              className="w-full h-64 object-cover"
+            />
 
             <div className="p-5 bg-gradient-to-r from-purple-600 to-pink-500">
-
               <div className="flex justify-between text-sm">
                 <div className="flex items-center gap-2">
-                  <img src={EllipseArt} className="w-9 h-9 rounded-full border-2 border-white" />
+                  <img
+                    src={EllipseArt}
+                    alt="Artist profile"
+                    className="w-9 h-9 rounded-full border-2 border-white"
+                  />
                   <div>
                     <p className="font-semibold">Laura</p>
                     <p className="text-xs opacity-80">0.21 Weth</p>
@@ -84,7 +98,6 @@ export default function Hero() {
                   PLACE A BID
                 </button>
               </div>
-
             </div>
           </div>
 
