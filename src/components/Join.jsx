@@ -1,10 +1,13 @@
 import joinImg from "../assets/ctaimg.png";
+
 export default function Join() {
   return (
     <section className="bg-gradient-to-br from-black via-purple-900 to-black px-12 py-32 text-white">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        
         <img
           src={joinImg}
+          alt="Join the NFT community"
           className="rounded-3xl shadow-xl"
         />
 

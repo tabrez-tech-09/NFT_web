@@ -1,6 +1,3 @@
-import Artists from "../components/Artists";
-import TrendingSection from "../components/TrendingSection";
-
 export default function About() {
   return (
     <div className="bg-black text-white">
@@ -91,3 +88,4 @@ export default function About() {
     </div>
   );
 }
+
